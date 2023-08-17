@@ -1,0 +1,271 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 15px 20px;
+    position: fixed;
+    width: 95%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos del menú desplegable en pantallas pequeñas */
+.toggle {
+    display: none;
+    width: 30px;
+    height: 30px;
+    color: black;
+    position: relative;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        display: block;
+    }
+    
+    .menu {
+        background-color: #ccc;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+    
+    .menu.active {
+        display: flex;
+    }
+    
+    .menu li {
+        margin: 0;
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid white;
+    }
+}
+
+/* Estilos para la sección de contacto */
+.contact-info {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #3498db;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #3498db;
+}
+
+#inicio {
+    background-image: url('ruta-de-tu-imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+}
+
+#inicio h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Estilo para el botón de llamado a la acción */
+#inicio .btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+#inicio .btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.img-inicio{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+}
+
+/* Estilos para la sección "Sobre Mí" */
+#sobre-mi {
+    color: #333;
+    text-align: center;
+}
+
+#sobre-mi h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+#sobre-mi p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilo para destacar el primer párrafo */
+#sobre-mi p:first-child {
+    font-weight: bold;
+}
+
+/* Estilo para los bordes redondeados del contenedor */
+#sobre-mi .container {
+    border-radius: 10px;
+    padding: 40px;
+}
+
+/* estilos proyecto */
+
+.project-card a{
+ text-decoration: none;
+}

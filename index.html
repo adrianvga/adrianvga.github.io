@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/icon/desarrollador.png">
+    <title>Adrian Lopez Vega</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Adrian Lopez Vega</div>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i> <!-- Ícono de menú -->
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Bienvenido, soy Adrian Lopez Vega</h2>
+                    <p>Soy un apasionado desarrollador web junior con conocimientos en tecnologías como <strong>React y NodeJS</strong> . Mi objetivo es crear soluciones web efectivas y atractivas.</p>
+                    <a href="#sobre-mi" class="btn btn-primary">Conóceme</a>
+                </div>
+                <div class="col md-6">
+                    <img class="img-inicio" src="imgs/adrian.png" alt="Adrian Lopez Vega">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Sobre Mí</h2>
+                    <p>Soy un apasionado desarrollador web con un trasfondo técnico en informática. Mi viaje en el mundo del desarrollo comenzó con conocimientos básicos en la creación de software, y desde entonces me he convertido en un autodidacta apasionado por aprender y crecer constantemente.</p>
+                    <p>Creo en la colaboración y en la posibilidad de impactar positivamente a través de la tecnología. Siempre estoy dispuesto a contribuir en proyectos emocionantes y a explorar nuevas tecnologías para mantenerme actualizado en un campo en constante evolución.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img class="img-proyecto" src="imgs/proyectos/clima.png" alt="App de Clima">
+                        <h3><a href="https://app-clima-adrian.netlify.app">App de Clima</a></h3>
+                        <p>Aplicacion de React usando la API de Weather</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="imgs/proyectos/todo.png" alt="ToDoApp">
+                        <h3><a href="https://todolistadrian.netlify.app">To Do App</a></h3>
+                        <p>Aplicacion de lista de tareas con React</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="ruta-de-imagen3.jpg" alt="Proyecto 3">
+                        <h3>Proyecto 3</h3>
+                        <p>Descripción breve del proyecto 3. Fusce vel fermentum lectus, ac luctus velit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experiencia" class="section"> <!-- Contenido de la sección Experiencia --> </section>
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="mb-4">Contacto</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <p>¡Estoy aquí para ayudarte! Contáctame mediante el formulario o a través de mis redes sociales.</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/adrianvga" class="btn"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/adrian-lopez-b662bb1b6/" class="btn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <form id="form">
+                            <div class="mb-3">
+                                <label for="from_name" class="form-label">Nombre</label>
+                                <input type="text" name="from_name" id="from_name" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <input type="text" name="message" id="message" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email_id" class="form-label">Email</label>
+                                <input type="text" name="email_id" id="email_id" class="form-control">
+                            </div>
+                            <button type="submit" id="button" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="footer-menu">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#experiencia">Experiencia</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-social">
+                        <a href="https://github.com/adrianvga" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/adrian-lopez-b662bb1b6/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('fCBCQm-w97D9NSKfG')
+    </script>
+</body>
+</html>
+
